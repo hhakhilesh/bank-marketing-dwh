@@ -1,0 +1,45 @@
+term_deposit:
+1. customer_id (PK)
+2. y
+
+dimBasicInfo:
+1.age
+2.job_id (FK)
+3. marital
+4. education_id (FK)
+5. customer_id (FK)
+
+dimJobType:
+1. job_id (PK)
+2. job_type
+
+dimEducation:
+1. education_id (PK)
+2. education_type
+
+dimFinances:
+1. default
+2. housing
+3. loan
+4. customer_id (FK)
+
+dimLastContact:
+1. customer_id (FK)
+2. month
+3. day_of_week
+4. duration
+
+dimPrevContact:
+1. customer_id (FK)
+2. campaign
+3. pdays
+4. previous
+5. poutcome
+
+dimSocioEconomic
+1. customer_id (FK)
+2. emp.var.rate
+3. consumer.price.index
+4. consumer.confidence.index
+5. euribor3m
+6. nr.employed
