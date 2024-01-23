@@ -1,1 +1,3 @@
-# bank-marketing-dwh
+This project showcases data warehousing skills using data gathered by a bank while running it's marketing campaign. First, the raw data was cleaned with pyspark `clean.ipynb` and then loaded into an S3 bucket as a single table using boto3 client.
+
+From here the table was imported into an AWS Redshift Serverless database. The file `dimandfacts.txt` showcase the tables after modeling the data. The commands in `history.sql` were executed in the query editor create the aforementioned tables and relationships. After that, a user was created and permissions were granted so that the database can be access from a BI tool such as Looker.
